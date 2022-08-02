@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela</title>
+  </head>
+  <body>
+    <h1>Cursos de Extensão da UNIFESSPA - Informática para Todos</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Modalidade</th>
+          <th>Cursos</th>
+          <th>Carga Horária</th>
+          <th>Idade mínima</th>
+          <th>Início</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">On-line</td>
+          <td>Excel Básico</td>
+          <td>24 horas</td>
+          <td>14 anos</td>
+          <td>Fevereiro, Março e Abril</td>
+          <td>50,00</td>
+        </tr>
+        <tr>
+          <td>Excel Avançado</td>
+          <td>39 horas</td>
+          <td>16 anos</td>
+          <td>Fevereiro, Março e Abril</td>
+          <td>75,00</td>
+        </tr>
+        <tr>
+          <td>Informática para Maturidade</td>
+          <td>36 horas</td>
+          <td>Acima de 40 anos</td>
+          <td>Fevereiro e Maio</td>
+          <td>50,00</td>
+        </tr>
+        <tr>
+          <td colspan="5">Investimento</td>
+          <td>175,00</td>
+        </tr>
+        <tr>
+          <td rowspan="4">On-line</td>
+          <td>Operador de Computador</td>
+          <td>160 horas</td>
+          <td>16 anos</td>
+          <td>Março e Outubro</td>
+          <td>100,00</td>
+        </tr>
+        <tr>
+          <td>PowerPoint</td>
+          <td>20 horas</td>
+          <td>14 anos</td>
+          <td>Março e Junho</td>
+          <td>25,00</td>
+        </tr>
+        <tr>
+          <td>Project</td>
+          <td>20 horas</td>
+          <td>16 anos</td>
+          <td>Fevereiro e Abril</td>
+          <td>50,00</td>
+        </tr>
+        <tr>
+          <td>World</td>
+          <td>24 horas</td>
+          <td>14 anos</td>
+          <td>Março e junho</td>
+          <td>25,00</td>
+        </tr>
+        <tr>
+          <td colspan="5">Investimento</td>
+          <td>200,00</td>
+        </tr> 
+      </tbody>
+    </table>
+  </body>
+</html>
+
+<style>
+  table {
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+  }
+
+  thead tr {
+    background: black;
+    color: #fff;
+    border: 1px solid #ccc !important;
+  }
+
+  thead th {
+    border: 1px solid #ccc !important;
+  }
+
+  td[colspan], td[colspan] + td {
+    font-weight: bold;
+  }
+</style>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=], initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1>Informações Pessoais</h1>
+    <form action="http://localhost:3333/usuario" method="POST">
+      <fieldset>
+        <legend>Cadastro do Cliente</legend>
+        <div>
+          <label for="name">Nome:</label>
+          <input type="text" name="name" id="name" placeholder="Nome" />
+        </div>
+        <div>
+          <label for="sex">Sexo:</label>
+          <input type="radio" name="sex" id="sex" value="male" /> masculino
+          <input type="radio" name="sex" id="sex" value="female" /> feminino
+        </div>
+        <div>
+          <label for="age">Idade:</label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            placeholder="Idade"
+            min="0"
+          />
+        </div>
+        <div>
+          <label for="address">Endereço:</label>
+          <input
+            type="text"
+            name="address"
+            id="address"
+            placeholder="Digite o endereço"
+            required
+          />
+        </div>
+        <div>
+          <label for="city">Cidade:</label>
+          <input
+            type="text"
+            name="city"
+            id="city"
+            placeholder="Digite a cidade"
+          />
+        </div>
+        <div>
+          <label for="state">Estado:</label>
+          <select name="state" id="state">
+            <option value="">UF</option>
+            <option value="PA">PA</option>
+            <option value="AC">AC</option>
+            <option value="AC">TO</option>
+            <option value="SP">SP</option>
+            <option value="RJ">RJ</option>
+            <option value="CE">CE</option>
+          </select>
+        </div>
+        <div>
+          <label for="cep">CEP:</label>
+          <input type="text" name="cep" id="cep" placeholder="XXXXX-XXX" />
+        </div>
+        <div>
+          <label for="phoneRes">Telefone Residencial:</label>
+          <input
+            type="text"
+            name="phoneRes"
+            id="phoneRes"
+            placeholder="(99) 99999-9999"
+          />
+        </div>
+        <div>
+          <label for="phoneCel">Telefone:</label>
+          <input
+            type="text"
+            name="phoneCel"
+            id="phoneCel"
+            placeholder="(99) 99999-9999"
+          />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Digite o endereço de email"
+          />
+        </div>
+      </fieldset>
+
+      <button type="submit">Incluir</button>
+    </form>
+  </body>
+</html>
+
+<style>
+  fieldset {
+    width: 600px;
+  }
+  div {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  div label {
+    margin-right: 10px;
+    display: inline-block;
+    width: 64px;
+  }
+
+  input[type="radio"] {
+    display: inline;
+  }
+
+  div:nth-child(3) label {
+    width: initial;
+  }
+
+  button {
+    margin-top: 10px;
+  }
+</style>
