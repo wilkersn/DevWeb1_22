@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    text-decoration:none;
+    color: white;
+}
+
+.topnav {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px;
+}
+
+.titulo-principal {
+    background-image: url('./pizzaria.jpeg');
+    
+    color: white;
+    font-size: 6rem;
+    font-family: 'Courier New', Courier, monospace;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    
+    height: 500px;
+    
+    position: relative;
+    background-size: cover;
+}
+
+.card {
+    padding: 1rem;
+    width: 100%;
+}
+
+.card ul {
+    /* background-color: red; */
+    margin: 0.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card ul li {
+    list-style: none;
+}
+
+.card ul li p {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    line-height: 20px;
+}
+
+.card ul li p span {
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.card ul li span {
+    color: white;
+    background-color: gray;
+}
+
+.footer {
+    width: 100%;
+    height: 150px;
+    background-color: #eee;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+}
+
+.footer h2 {
+    margin: 20px 0;
+}
