@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+ 
+	<script src="script.js"></script>
+	
+	<meta content="target-densitydpi=160dpi, initial-scale=0, width=device-width, minimum-scale=1, maximum-scale=1" name="viewport">
+	<title>QUESTIONE-SE - JOGO</title>
+	
+  <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/style.css">
+</head>
+<header class="cabecalhoPrincipal">
+	<div class="container-logo">
+		<div class="cabecalhoPrincipal-titulo">
+			<img src="../../img/logo.jpg"
+			width="60"
+			height="80">	
+		</div>
+		<h1>QUESTIONE-SE</h1>
+		<nav class="cabecalhoPrincipal-nav">
+			<a class="cabecalhoPrincipal-nav-link" href="../../index.html">Home</a>
+			<a class="cabecalhoPrincipal-nav-link" href="../quiz/index.html">Quiz</a>
+			<a class="cabecalhoPrincipal-nav-link" href="../game/index.html">Jogo</a>
+			<a class="cabecalhoPrincipal-nav-link" href="../dados/index.html">Dados</a>
+		</nav>
+	</div>
+
+</header>
+<body>
+
+	<main class="conteudoPrincipal">
+		<div id="land" class="land">
+		<div id="land-msg" class="land-msg">
+			<div class="memorama-flip">
+				<span class="memorama" >Joogo da Memoria</span>
+				<button class="btn-play" onclick="javascript:playNow();">Jogar &#9658;</button>
+			</div>
+		</div>    
+	</div>
+	
+	<div id="result" class="land land-hide"> 
+			<div id="result-content" class="land-msg">
+				<span id="result-msg" class="result-msg"></span>
+				<button class="btn-play btn-play-again" onclick="javascript:playAgain();">Jogar de novo &#9658;</button>    
+			</div>
+	</div>  
+			
+	<div id="game"><ul class="flex-container" id="cards"></ul>
+	</div>
+	</main>
+  <footer class="rodapePrincipal">
+		<div class="container">
+			<h2>QUESTIONE-SE</h2>
+			<h2>copyright © 2022 </h2>
+			<p>Todos os direitos reservados.</p>
+		</div>	
+	</footer>
+
+</body>
+
+</html>
